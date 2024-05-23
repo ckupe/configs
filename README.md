@@ -4,7 +4,6 @@ Personal machine configurations
 ## Contents
 
 - OSTree Packages
-- Dotfiles
 - Toolbox Image
 
 ## Install OSTree Layers
@@ -20,3 +19,8 @@ bash -c "$(https://github.com/ckupe/configs/raw/main/ostree/desktop-packages.sh)
 ```bash
 bash -c "$(https://github.com/ckupe/configs/raw/main/ostree/shared-packages.sh)"
 ```
+
+### Install Toolbox
+
+```bash
+bash -c "$(https://raw.githubusercontent.com/ckupe/configs/main/toolbox/install.sh)"
