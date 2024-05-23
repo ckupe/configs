@@ -1,3 +1,4 @@
 #!/bin/env bash
 sudo rpm-ostree install -y --idempotent akmod-nvidia xorg-x11-drv-nvidia xorg-x11-drv-nvidia-cuda
-sudo rpm-ostree kargs --reboot --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1
+sudo rpm-ostree kargs --reboot --append-if-missing=rd.driver.blacklist=nouveau --append-if-missing=modprobe.blacklist=nouveau --append-if-missing=nvidia-drm.modeset=1
+
